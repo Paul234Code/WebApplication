@@ -45,4 +45,8 @@ body{
 #div2-footer{
     background-color: white;
     align-items: center;
+    margin: 20px 20px;
+}
+#div2-footer a{
+
 }
