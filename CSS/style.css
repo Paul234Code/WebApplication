@@ -1,0 +1,48 @@
+/* les dimensions du body*/
+body{
+    width: 100%;
+    background: white;
+}
+/* le div principal de la page */
+#main {
+    width: 90%;
+    align-content: center;
+    margin: 20px 40px;
+
+    /*display: flex;*/
+    /*align-items: center;
+    justify-content: center; */
+
+
+}
+#div-footer {
+    align-content: center;
+    margin: auto;
+}
+#div1-footer{
+    width: 100%;
+    height: 150px;
+    /*margin: 0 auto; */
+    background-color: #C0C0C0;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+#buttn-footer{
+    background-color: #1E90FF;
+    width: 180px;
+    height: 40px;
+    font: 20px bold;
+
+    color: white;
+    border: 1px solid #1E90FF;
+}
+#buttn-footer a{
+    text-decoration: none;
+    color: white;
+}
+#div2-footer{
+    background-color: white;
+    align-items: center;
+}
