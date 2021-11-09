@@ -1,33 +1,55 @@
 /* les dimensions du body*/
 body{
-    width: 100%;
+
     background: white;
+    padding: 60px 60px;
 }
-/* le div principal de la page */
-#main {
-    width: 90%;
-    align-content: center;
-    margin: 20px 40px;
+/* le conteneur de grilles */
+ .grid-container{
+     display: grid;
+     width: 980px;
+     margin-left: 90px;
+     grid-template-columns: auto auto;
+     margin-bottom: 30px;
 
-    /*display: flex;*/
-    /*align-items: center;
-    justify-content: center; */
+ }
 
 
+.grid-item1,.grid-item2,.grid-item3,.grid-item4 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    height: 300px;
+}
+.grid-item1{
+    background-color: #1E90FF;
+    text-align: center;
+}
+.grid-item4{
+    background-color: blue;
+    text-align: center;
+}
+.grid-item2{
+    background-color: aqua;
+}
+.grid-item3{
+    background-image: url("/images/image1.png");
 }
 #div-footer {
+    width: 90% ;
     align-content: center;
     margin: auto;
 }
 #div1-footer{
-    width: 100%;
+    width: 980px;
     height: 150px;
-    /*margin: 0 auto; */
+
     background-color: #C0C0C0;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 30px;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 #buttn-footer{
     background-color: #1E90FF;
