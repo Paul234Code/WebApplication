@@ -33,7 +33,7 @@ body{
     background-color: aqua;
 }
 .grid-item3{
-    background-image: url("/images/image1.png");
+    background-image: url('/images/image1.png');
 }
 #div-footer {
     width: 90% ;
