@@ -10,17 +10,27 @@
  <div id="mydiv1">
      <nav>
          <ul>
-             <li id="b-system"><a><img src="images/02.%20Logo_white.png" alt="logo white">&nbsp;&nbsp;</a></li>
-             <li><a href="html/studio.html">Our studio</a></li>
-             <li><a href="html/service.html">Services</a></li>
-             <li><a href="html/DesignForHumans.html">Designing for humans</a></li>
-             <li><a href="html/contact.html">Contact</a></li>
-             <li id="area-zone"><label for="button-search"></label><input type="search" id="button-search"></li>
-             <li><button id="area"><a href="html/your-era.html">Your Area &nbsp; <img src="images/login.png" alt="login" style="width: 20px;height: 20px;color: #1E90FF"></a></button></li>
+             <li id="items"><a><img src="images/02.%20Logo_white.png" alt="logo white">&nbsp;&nbsp;</a></li>
+             <li class="items"><a href="html/studio.html">Our studio</a></li>
+             <li class="items"><a href="html/service.html">Services</a></li>
+             <li class="items"><a href="html/DesignForHumans.html">Designing for humans</a></li>
+             <li class="items"><a href="html/contact.html">Contact</a></li>
+             <li class="items" id="champ"><input  type="search" ></li>
+             <li class="items"><button  id = "connection"><a>Your area</a></button></li>
          </ul>
      </nav>
+     <div id="my-section">
+         <h1>We make <br>magic</h1>
+         <p>We are a freelance design studio passionate about<br>rethinking how things operate every day</p>
+
+         <p><button> <a href="html/meet_B_system.html"> Meet B_system </a> </button> </p>
+     </div>
+     <div id="article">
+        <img src="images/image2.png" alt="image de fond" id="image">
+     </div>
 
  </div>
+
  <!-- div2 -->
  <div id="mydiv2">
 
@@ -36,8 +46,7 @@
 <div class="grid-container">
     <div class="grid-item1">
         <h1>How do we do it?</h1>
-        <p >
-            Putting our client' users at the center of the<br>
+        <p >Putting our client' users at the center of the<br>
             conversation,and giving solutions from design to<br>
             complex problems.No matter the size of the project, we<br>
             we use these principles to guide our way to create impact<br>
@@ -51,16 +60,44 @@
         <img src="images/image1.png" alt="image de fond">
     </div>
     <div class="grid-item4">
-        <h1>Our values</h1>
+
         <ul>
-            <li><a href="html/design.html">simple and intituive design</a></li>
+            <li><h1>Our values</h1></li>
+            <li><a href="html/design.html">simple and intituive design</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<label>+</label></li>
+            <li><hr></li>
+             <li><p></p></li>      <!-- afficher en cas de click avec javascript -->
+            <li>Emotions and data in the same bag &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>+</label></li>
+            <li><hr></li>
+            <li><p></p></li>    <!-- afficher en cas de click avec javascript -->
+            <li>Curiosity rules the study &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>+</label></li>
+            <li><hr></li>
+            <li><p></p></li>    <!-- afficher en cas de click avec javascript -->
 
         </ul>
     </div>
 </div>
-<div id="Contact-us">
+ <div id="contact">
 
-</div>
+
+     <div id="formulaire">
+         <table>
+             <tr> <td><h1>Contact us!</h1></td></tr>
+             <tr><td><p>Please fill out this form to send your message:</p></td></tr>
+             <tr><td><input type="text" placeholder="Name" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
+             <tr><td><input type="text" placeholder="Surnames" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
+             <tr><td><input type="text" placeholder="Email" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
+             <tr><td><input type="text" placeholder="Subject" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
+             <tr><td><input  value="Message" style="width: 500px; height: 200px; margin-bottom: 15px;"></td></tr>
+             <tr><td><input type="checkbox" style="width: 30px;height: 30px;margin-bottom: 15px;"><sup>&nbsp;I authorize the treatment of my data</sup></td></tr>
+             <tr><td><input type="button" value="Send" style=" width:160px;height: 40px"></td></tr>
+         </table>
+
+     </div>
+     <div>
+
+     </div>
+
+ </div>
 <div id="div-footer">
     <!-- premier sous div du footer -->
     <div id="div1-footer">
@@ -75,6 +112,7 @@
         <object data="/images/pinterest.png"  style="width: 50px;height: 50px" type="image/svg+xml"></object>
         <object data="/images/twitter.png"  style="width: 50px;height: 50px" type="image/svg+xml"></object>
         <object data="/images/linkedin.png"  style="width: 50px;height: 50px" type="image/svg+xml"></object>
+
     </div>
     <!-- troisieme sous div3 -->
     <div id="div3-footer">
@@ -83,6 +121,10 @@
     </div>
 
 </div>
+<!-- inclusion du fichier javascript externe -->
+<script type="text/javascript" src="js/main.js">
+
+</script>
 
 </body>
 </html>
