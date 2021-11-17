@@ -1,99 +1,69 @@
-/* le menu de navigation */
+/* le padding est inclu dans le calcul */
 *{
     box-sizing: border-box;
-}
+ }
 body{
-
     background: white;
-    /*padding-left: 10px;
-    padding-right: 10px; */
-}
-nav{
-    width: 100%;
-    background-color: rgb(0,94,94);
-    margin-bottom: 10px;
-
 }
 #image{
     float: right;
-    margin-right: 280px;
+    margin-right: 200px;
+    *border: 1px solid black;
+    height: 640px;
+    margin-bottom: 200px;
+    background-size: cover;
+}
+#fex-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 75%;
+    background-color: DodgerBlue;
+    height: 1000px;
+}
+.header{
+    background-color: #1E90FF;
+    height: 70px;
+    padding: 20px 20px;
+}
+.nav {
+    height: 70px;
+    background-color:#1E90FF;
+    padding-top: 10px;
+}
+.nav li{
+    display: inline;
+    width: 100px;
+    padding: 10px 10px;
+}
+.nav li a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 20px;
+}
+#section{
     border: 1px solid black;
-    height: 600px;
-    margin-bottom: 160px;
+    margin-left: 100px;
+    padding-left: 100px;
+}
+#input #icon{
+    background-color: #1E90FF;
+    border: #1E90FF;
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
+}
+#button{
+    width: 160px;
+    height: 40px;
+    background-color: #1E90FF;
+    border: 1px solid white;
 }
 #article{
-    padding-bottom: 250px;
-}
-#my-section{
-    float: left;
-    width: 400px;
-    height: 500px;
-    margin-left: 260px;
-    margin-top: 100px;
-    padding-left: 20px;
-    padding-top: 100px;
     border: 1px solid black;
-    color: white;
 }
-#button-search{
-
-    width: 300px;
-    border: 1px solid #1E90FF;
-    margin-left: 150px;
-    /*margin-right: 100px;*/
-}
-li #connection{
- border: 1px solid white;
-    background-color: #1E90FF;
-    width: 150px;
-    height: 40px;
-
-    margin-bottom: 50px;
-
-
-
+#article #image{
 
 }
-#mydiv1{
-    width: 100%;
-    height: 800px;
-    background-color: #1E90FF;
-
-
-}
-
-li.items {
-
-    width: 12.66%;
-    height: 80px;
-    text-align: center;
-    /*padding-top: 30px; */
-
-    background-color: #1E90FF;
-    float: left;
-    list-style: none;
-    color: white;
-
-
-}
-li a{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-}
-nav >ul .items:hover{
-    background-color: RGB(0,55,174);
-
-
-}
-#champ{
-    /*background-color: DodgerBlue; */
-    margin-left: 270px;
-
-
-}
-
-
 #mydiv2{
     width: 100%;
     height: 230px;
@@ -109,20 +79,14 @@ nav >ul .items:hover{
     text-align: center;
     padding-right: 100px;
 }
-
-/* les dimensions du body*/
-
 /* le conteneur de grilles */
  .grid-container{
      display: grid;
      width: 100%;
      grid-template-columns: 50% 50%;
      margin-bottom: 10px;
-
-
+     border-style: outset;
  }
-
-
 .grid-item1 {
     width: 100%;
     background-color: DodgerBlue;
@@ -132,14 +96,17 @@ nav >ul .items:hover{
     height: 460px;
     text-align: center;
 }
-.grid-item1 h1{
+#title{
     text-align: center;
     color: white;
 }
-.grid-item1 p{
+#paragraph{
+    text-align: left;
+    margin-left: 160px;
+    margin-bottom: 10px;
     font-size: 18px;
     color: white;
-
+    width: 400px;
 }
 .grid-item2{
     background-color: #1E90FF;
@@ -160,24 +127,19 @@ nav >ul .items:hover{
     display: inline;
     padding-left: 40px;
     text-align: left;
-
 }
 .grid-item4 li{
     list-style: none;
     color: white;
-
 }
 .grid-item4 li >{
     text-decoration: underline;
     width: 300px;
-
 }
-
 #imagefond{
     width: 100%;
     height: 565px;
     align-content: center;
-
 }
 #div-footer {
     width: 100% ;
@@ -187,15 +149,12 @@ nav >ul .items:hover{
 #div1-footer{
     width: 100%;
     height: 200px;
-
-    background-color: lightgray;
+    background-color: #f1f1f1;;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 30px;
     margin-bottom: 10px;
     border-style: outset;
-
-
 }
 #button-footer{
     background-color: #1E90FF;
@@ -217,15 +176,12 @@ nav >ul .items:hover{
     padding-top: 90px;
     border-style: outset;
     padding-bottom: 20px;
-
-
 }
 #div3-footer {
     width: 100%;
     height: 200px;
     text-align: center;
     padding-top: 50px;
-
 }
 #contact{
     width: 100%;
@@ -234,4 +190,26 @@ nav >ul .items:hover{
     padding-top: 100px;
     padding-left: 200px;
     padding-right: 200px;
+}
+/* partie contenant le formulaire  les numeros de contacts */
+#contact-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    padding: 0 100px;
+    margin-bottom: 10px;
+    border-style: outset;
+}
+#formulaire{
+    border: 1px solid black;
+    margin-right: 10px;
+    padding-left: 80px;
+}
+#formulaire input:active{
+    border: 1px solid #1E90FF;
+    background-color: white;
+}
+#contacts{
+    border: 1px solid black;
+    background-color: red;
 }

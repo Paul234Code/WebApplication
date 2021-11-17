@@ -2,27 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Paul Faye">
+    <meta http-equiv="refresh" content="30">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="B_system  home page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designer</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
- <div id="mydiv1">
-     <nav>
-         <ul>
-             <li id="items"><a><img src="images/02.%20Logo_white.png" alt="logo white">&nbsp;&nbsp;</a></li>
-             <li class="items"><a href="html/studio.html">Our studio</a></li>
-             <li class="items"><a href="html/service.html">Services</a></li>
-             <li class="items"><a href="html/DesignForHumans.html">Designing for humans</a></li>
-             <li class="items"><a href="html/contact.html">Contact</a></li>
-             <li class="items" id="champ"><input  type="search" ></li>
-             <li class="items"><button  id = "connection"><a>Your area</a></button></li>
-         </ul>
-     </nav>
-     <div id="my-section">
+ <div id="fex-container">
+     <div class="header">
+     <img src="images/02.%20Logo_white.png" alt="logo white">
+     </div>
+         <div class="nav">
+             <ul>
+                <li ><a href="html/studio.html">Our studio</a></li>
+                <li ><a href="html/service.html">Services</a></li>
+                <li ><a href="html/DesignForHumans.html">Designing for humans</a></li>
+                <li id="contact1"><a href="html/contact.html">Contact</a></li>
+                <li id = "input"><input  type="search"  id="icon"><label for="icon">Iconship</label></li>
+                <li ><button id="button"><a href="html/your-era.html">Your area<label>User</label></a></button></li>
+             </ul>
+         </div>
+     <div id="section">
          <h1>We make <br>magic</h1>
          <p>We are a freelance design studio passionate about<br>rethinking how things operate every day</p>
-
          <p><button> <a href="html/meet_B_system.html"> Meet B_system </a> </button> </p>
      </div>
      <div id="article">
@@ -35,9 +40,10 @@
  <div id="mydiv2">
 
          <h1>What do we do?</h1>
-         <p>we design digital products,services, and systems with goal of enrichin and
-             improving the way people <br>use things.We put people first to design, build, and
-             launch experiences that redefine industries in our<br> constantly evolving digital era</p>
+         <p>we design digital products,services, and systems with goal of
+             enrichin and improving the way people <br>use things.We put people first to
+             design, build, and launch experiences that redefine industries in our<br>
+             constantly evolving digital era</p>
 
  </div>
 
@@ -45,13 +51,13 @@
  <!-- div contenant des grilles -->
 <div class="grid-container">
     <div class="grid-item1">
-        <h1>How do we do it?</h1>
-        <p >Putting our client' users at the center of the<br>
+        <h1 id="title">How do we do it?</h1>
+        <p id="paragraph">Putting our client' users at the center of the<br>
             conversation,and giving solutions from design to<br>
             complex problems.No matter the size of the project, we<br>
             we use these principles to guide our way to create impact<br>
         </p>
-        <p><a href="/html/learn.html">Learn more</a></p>
+        <p><a href="/html/learn.html">Learn more-&gt;</a></p>
     </div>
     <div class="grid-item2">
         <img src="images/image3.png"  id="imagefond" alt="image de fond">
@@ -76,28 +82,38 @@
         </ul>
     </div>
 </div>
- <div id="contact">
+ <div id="contact-container">
 
+     <!-- div contenant le formulaire -->
+       <div id="formulaire">
 
-     <div id="formulaire">
-         <table>
-             <tr> <td><h1>Contact us!</h1></td></tr>
-             <tr><td><p>Please fill out this form to send your message:</p></td></tr>
-             <tr><td><input type="text" placeholder="Name" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
-             <tr><td><input type="text" placeholder="Surnames" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
-             <tr><td><input type="text" placeholder="Email" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
-             <tr><td><input type="text" placeholder="Subject" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
-             <tr><td><input  value="Message" style="width: 500px; height: 200px; margin-bottom: 15px;"></td></tr>
-             <tr><td><input type="checkbox" style="width: 30px;height: 30px;margin-bottom: 30px;"><sup>&nbsp;I authorize the treatment of my data</sup></td></tr>
-             <tr><td><input type="button" value="Send" style=" width:190px;height: 40px"></td></tr>
-         </table>
+                <table>
+                   <tr> <td><h1>Contact us!</h1></td></tr>
+                   <tr><td><p>Please fill out this form to send your message:</p></td></tr>
+                   <tr><td><input type="text" placeholder="Name" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
+                   <tr><td><input type="text" placeholder="Surnames" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
+                   <tr><td><input type="text" placeholder="Email" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
+                   <tr><td><input type="text" placeholder="Subject" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
+                   <tr><td><input  value="Message" style="width: 500px; height: 200px; margin-bottom: 15px;"></td></tr>
+                   <tr><td><input type="checkbox" style="width: 30px;height: 30px;margin-bottom: 30px;"><sup>&nbsp;I authorize the treatment of my data</sup></td></tr>
+                   <tr><td><input type="button" value="Send" style=" width:190px;height: 40px"></td></tr>
+                </table>
+       </div>
+         <!-- div contenant les contacts -->
+       <div id="contacts">
+           <div id="urgent-query">
 
-     </div>
-     <div>
+           </div>
+           <div id="search-engine">
 
-     </div>
+           </div>
+
+       </div>
 
  </div>
+
+
+
 <div id="div-footer">
     <!-- premier sous div du footer -->
     <div id="div1-footer">
