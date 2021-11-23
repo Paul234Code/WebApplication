@@ -196,7 +196,7 @@ body{
 #div1-footer{
     width: 100%;
     height: 200px;
-    background-color: #f1f1f1;;
+    background-color: #f1f1f1;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 30px;
@@ -243,15 +243,15 @@ body{
 #contact-container{
     display: grid;
     width: 100%;
-    grid-template-columns: 50% 50%;
-    padding: 0 100px;
+    grid-template-columns: 60% 40%;
+    padding: 0 180px;
     margin-bottom: 10px;
     border-style: outset;
 }
 #formulaire{
     border: 1px solid black;
-    margin-right: 10px;
-    padding-left: 80px;
+
+    padding-left: 70px;
     padding-top: 30px;
 }
 /*#formulaire input:active{
@@ -260,5 +260,23 @@ body{
 } */
 #contacts{
     border: 1px solid black;
-    background-color: red;
+    padding-top: 170px;
+    padding-left: 10px;
+
+    /*background-color: red;*/
+}
+#contacts #urgent-query{
+    width: 440px;
+    height: 400px;
+    background-color: #1E90FF;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+#search-engine{
+    width: 440px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+
 }
