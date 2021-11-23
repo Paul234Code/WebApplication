@@ -7,6 +7,10 @@ body{
     background: white;
     width: 100%;
     padding: 10px 10px;
+    /*font-style: Roboto; */
+    size: 15px;
+    weight: 400;
+
 }
 #fex-container{
     display: flex;
@@ -115,9 +119,9 @@ body{
     color: white;
 }
 
-#mydiv2{
+#div2-container{
     width: 100%;
-    height: 230px;
+    height: 300px;
     text-align: center;
     border: 1px solid white;
     background-color: white;
@@ -126,16 +130,22 @@ body{
     padding-right: 250px;
     padding-top: 50px;
 }
-#mydiv2 h1{
+#div2-container h1{
     text-align: center;
-    padding-right: 100px;
+    padding-left: 150px;
+    margin-bottom: 40px;
+}
+#div2-container p{
+    text-align: center;
+    padding-left: 150px;
 }
 /* le conteneur de grilles */
  .grid-container{
      display: grid;
      width: 100%;
+
      grid-template-columns: 50% 50%;
-     margin-bottom: 10px;
+     margin-bottom: 40px;
      border-top-style: outset;
  }
 .grid-item1 {
@@ -152,12 +162,17 @@ body{
     color: white;
 }
 #paragraph{
-    text-align: left;
+    text-align: justify;
     margin-left: 160px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 18px;
     color: white;
     width: 400px;
+}
+#learn-more{
+    text-align: justify;
+    margin-left: 160px;
+
 }
 .grid-item2{
     background-color: #1E90FF;
@@ -261,7 +276,7 @@ body{
 
 #contacts{
     border: 1px solid black;
-    padding-top: 170px;
+    padding-top: 165px;
     padding-left: 10px;
 
     /*background-color: red;*/
@@ -269,15 +284,34 @@ body{
 #contacts #urgent-query{
     width: 440px;
     height: 400px;
-    background-color: #1E90FF;
+    /*background-color: #1E90FF; */
     margin-bottom: 20px;
     border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 30px;
+   /* background-color: cornflowerblue;*/
+    background-color: lightblue;
 
 }
+/* prorpiete de l'icone de recherche */
 #search-engine{
     width: 440px;
     height: 150px;
     background-color: #f1f1f1;
     border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(0,180,255);
 
+}
+/* mettre l'image dans cercle avec une couleur de fond blanc */
+#woman{
+    width: 150px;
+    height: 150px;
+    border: none;
+    -moz-border-radius: 85px;
+    -webkit-border-radius : 85px;
+    border-radius : 85px;
+    background-color: #f1f1f1;
+    padding-top: 20px;
 }
