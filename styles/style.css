@@ -1,4 +1,4 @@
-/* le padding est inclu dans le calcul */
+/*  inclure le padding et le border dans le calcul des width */
 *{
     box-sizing: border-box;
  }
@@ -7,16 +7,17 @@ body{
     background: white;
     font-family: 'Roboto ', sans-serif;
     width: 100%;
-    /*padding: 10px 10px; */
     margin: 0;
     padding: 0;
     size: 15px;
     weight: 400;
-
 }
-/*html{
-    font-size: 100%;
-} */
+#avatar{
+    filter: invert(100%);
+}
+#image1{
+    filter: invert(100%);
+}
 #fex-container{
     display: flex;
     width: 100%;
@@ -28,26 +29,16 @@ body{
     text-align: center;
     justify-content: space-between;
     align-items: center;
-
-}
-#droite *{
-
 }
 #fex-container div{
     margin-left: 20px;
     margin-right: 20px;
     height: 60px;
 }
-.nav{
-
-
-}
-
 .nav  li {
     display: inline;
     height: 100px;
     background-color:#1E90FF;
-
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -67,7 +58,6 @@ body{
     background-color: #1E90FF;
     padding-bottom: 30px;
     padding-left: 200px;
-
 }
 /*========================================================================================================*/
 #section h1{
@@ -92,32 +82,19 @@ body{
     text-decoration: none;
     font-size: 20px;
 }
-#article{
-
-}
-
-#article #image{
-
-
-
-}
 #learn-more{
     color: #f1f1f1;
 }
 #droite button{
     color: #f1f1f1;
     margin-left: 20px;
-
 }
-
 #droite {
     justify-content: space-between;
-
 }
 #section{
     padding-top: 120px;
 }
-
  #icon{
     background-color: #1E90FF;
     border: #1E90FF;
@@ -134,8 +111,6 @@ body{
     height: 16px;
     margin-left: 20px;
     text-align: center;
-
-
 }
 #input a{
     color: #f1f1f1;
@@ -154,7 +129,6 @@ body{
     margin-left: 10px;
     color: white;
 }
-
 #div2-container{
     width: 100%;
     height: 300px;
@@ -179,7 +153,6 @@ body{
  .grid-container{
      display: grid;
      width: 100%;
-
      grid-template-columns: 50% 50%;
      margin-bottom: 40px;
      border-top-style: outset;
@@ -208,7 +181,6 @@ body{
 #learn-more{
     text-align: justify;
     margin-left: 160px;
-
 }
 .grid-item2{
     background-color: #1E90FF;
@@ -232,28 +204,24 @@ body{
     text-align: left;
     padding-right: 250px;
 }
-
 .grid-item4 label{
     font-size: 30px;
 }
 .grid-item4 li a{
     text-decoration: none;
     color: #f1f1f1;
-
 }
 .grid-item4 li{
     list-style: none;
     color: white;
 }
-/*.grid-item4 li >{
-    text-decoration: underline;
-    width: 300px;
-
-} */
 .grid-item4 li hr{
     size: 15px;
     color: #f1f1f1;
-
+}
+#button a{
+    text-decoration: none;
+    color: #f1f1f1;
 }
 #imagefond{
     width: 100%;
@@ -322,29 +290,22 @@ body{
 }
 #formulaire{
     border: 1px solid white;
-
     padding-left: 70px;
     padding-top: 30px;
 }
-
 #contacts{
     border: 1px solid white;
     padding-top: 165px;
     padding-left: 10px;
-
-    /*background-color: red;*/
 }
 #contacts #urgent-query{
     width: 440px;
     height: 400px;
-    /*background-color: #1E90FF; */
     margin-bottom: 20px;
     border-radius: 5px;
     padding-left: 30px;
     padding-top: 30px;
-   /* background-color: cornflowerblue;*/
     background-color: lightblue;
-
 }
 /* prorpiete de l'icone de recherche */
 #search-engine{
@@ -355,7 +316,6 @@ body{
     padding-top: 20px;
     padding-left: 20px;
     color: rgb(0,180,255);
-
 }
 /* mettre l'image dans cercle avec une couleur de fond blanc */
 #woman{
