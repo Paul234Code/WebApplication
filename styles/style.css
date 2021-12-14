@@ -1,72 +1,137 @@
-/* le padding est inclu dans le calcul */
+/*  inclure le padding et le border dans le calcul des width */
 *{
     box-sizing: border-box;
  }
+
 body{
     background: white;
+    font-family: 'Roboto ', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    size: 15px;
+    weight: 400;
 }
-#image{
-    float: right;
-    margin-right: 200px;
-    *border: 1px solid black;
-    height: 640px;
-    margin-bottom: 200px;
-    background-size: cover;
+#avatar{
+    filter: invert(100%);
+}
+#image1{
+    filter: invert(100%);
 }
 #fex-container{
-    display: grid;
+    display: flex;
     width: 100%;
-    grid-template-columns: 25% 75%;
-    background-color: DodgerBlue;
-    height: 1000px;
+    height: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
 }
-.header{
-    background-color: #1E90FF;
-    height: 70px;
-    padding: 20px 20px;
+#fex-container div{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
 }
-.nav {
-    height: 70px;
-    background-color:#1E90FF;
-    padding-top: 10px;
-}
-.nav li{
+.nav  li {
     display: inline;
-    width: 100px;
-    padding: 10px 10px;
+    height: 100px;
+    background-color:#1E90FF;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .nav li a{
+    display: inline;
     text-decoration: none;
     color: #f1f1f1;
-    font-size: 20px;
-}
-#section{
-    border: 1px solid black;
-    margin-left: 100px;
-    padding-left: 100px;
-}
-#input #icon{
-    background-color: #1E90FF;
-    border: #1E90FF;
-    margin-left: 100px;
-    width: 200px;
-    height: 40px;
 }
 #button{
-    width: 160px;
+    color: #f1f1f1;
+}
+/* Le div du centre */
+#div-center{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    height: 900px;
+    background-color: #1E90FF;
+    padding-bottom: 30px;
+    padding-left: 200px;
+}
+/*========================================================================================================*/
+#section h1{
+    font-size: 70px;
+    color: #f1f1f1;
+}
+#section #paragrah1{
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+#section button{
+    width: 230px;
+    height: 50px;
+    background-color: #1E90FF;
+    color: #f1f1f1;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 20px;
+}
+#section button a{
+     color: #f1f1f1;
+    text-decoration: none;
+    font-size: 20px;
+}
+#learn-more{
+    color: #f1f1f1;
+}
+#droite button{
+    color: #f1f1f1;
+    margin-left: 20px;
+}
+#droite {
+    justify-content: space-between;
+}
+#section{
+    padding-top: 120px;
+}
+ #icon{
+    background-color: #1E90FF;
+    border: #1E90FF;
+    margin-left: 20px;
+    width: 250px;
+    height: 40px;
+}
+ .header{
+     padding-right: 200px;
+ }
+#image1{
+    color: #f1f1f1;
+    width: 18px;
+    height: 16px;
+    margin-left: 20px;
+    text-align: center;
+}
+#input a{
+    color: #f1f1f1;
+}
+#button{
+    width: 140px;
     height: 40px;
     background-color: #1E90FF;
     border: 1px solid white;
+    border-radius: 4px;
+    margin-left: 20px;
 }
-#article{
-    border: 1px solid black;
+#button img{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    color: white;
 }
-#article #image{
-
-}
-#mydiv2{
+#div2-container{
     width: 100%;
-    height: 230px;
+    height: 300px;
     text-align: center;
     border: 1px solid white;
     background-color: white;
@@ -75,17 +140,22 @@ body{
     padding-right: 250px;
     padding-top: 50px;
 }
-#mydiv2 h1{
+#div2-container h1{
     text-align: center;
-    padding-right: 100px;
+    padding-left: 150px;
+    margin-bottom: 40px;
+}
+#div2-container p{
+    text-align: center;
+    padding-left: 150px;
 }
 /* le conteneur de grilles */
  .grid-container{
      display: grid;
      width: 100%;
      grid-template-columns: 50% 50%;
-     margin-bottom: 10px;
-     border-style: outset;
+     margin-bottom: 40px;
+     border-top-style: outset;
  }
 .grid-item1 {
     width: 100%;
@@ -101,12 +171,16 @@ body{
     color: white;
 }
 #paragraph{
-    text-align: left;
+    text-align: justify;
     margin-left: 160px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 18px;
     color: white;
     width: 400px;
+}
+#learn-more{
+    text-align: justify;
+    margin-left: 160px;
 }
 .grid-item2{
     background-color: #1E90FF;
@@ -126,15 +200,28 @@ body{
     height: 460px;
     display: inline;
     padding-left: 40px;
+    padding-top: 100px;
     text-align: left;
+    padding-right: 250px;
+}
+.grid-item4 label{
+    font-size: 30px;
+}
+.grid-item4 li a{
+    text-decoration: none;
+    color: #f1f1f1;
 }
 .grid-item4 li{
     list-style: none;
     color: white;
 }
-.grid-item4 li >{
-    text-decoration: underline;
-    width: 300px;
+.grid-item4 li hr{
+    size: 15px;
+    color: #f1f1f1;
+}
+#button a{
+    text-decoration: none;
+    color: #f1f1f1;
 }
 #imagefond{
     width: 100%;
@@ -149,20 +236,21 @@ body{
 #div1-footer{
     width: 100%;
     height: 200px;
-    background-color: #f1f1f1;;
+    background-color: #f1f1f1;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 30px;
     margin-bottom: 10px;
-    border-style: outset;
+    border-top-style: outset;
 }
 #button-footer{
     background-color: #1E90FF;
-    width: 200px;
-    height: 40px;
+    width: 230px;
+    height: 45px;
     font: 20px bold;
     color: white;
     border: 1px solid #1E90FF;
+    border-radius: 5px;
 }
 #button-footer a{
     text-decoration: none;
@@ -174,7 +262,7 @@ body{
     background-color: white;
     text-align: center;
     padding-top: 90px;
-    border-style: outset;
+    border-top-style: outset;
     padding-bottom: 20px;
 }
 #div3-footer {
@@ -195,21 +283,48 @@ body{
 #contact-container{
     display: grid;
     width: 100%;
-    grid-template-columns: 50% 50%;
-    padding: 0 100px;
+    grid-template-columns: 60% 40%;
+    padding: 0 180px;
     margin-bottom: 10px;
-    border-style: outset;
+    border-top-style: outset;
 }
 #formulaire{
-    border: 1px solid black;
-    margin-right: 10px;
-    padding-left: 80px;
-}
-#formulaire input:active{
-    border: 1px solid #1E90FF;
-    background-color: white;
+    border: 1px solid white;
+    padding-left: 70px;
+    padding-top: 30px;
 }
 #contacts{
-    border: 1px solid black;
-    background-color: red;
+    border: 1px solid white;
+    padding-top: 165px;
+    padding-left: 10px;
+}
+#contacts #urgent-query{
+    width: 440px;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: lightblue;
+}
+/* prorpiete de l'icone de recherche */
+#search-engine{
+    width: 440px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(0,180,255);
+}
+/* mettre l'image dans cercle avec une couleur de fond blanc */
+#woman{
+    width: 150px;
+    height: 150px;
+    border: none;
+    -moz-border-radius: 85px;
+    -webkit-border-radius : 85px;
+    border-radius : 85px;
+    background-color: #f1f1f1;
+    padding-top: 20px;
 }

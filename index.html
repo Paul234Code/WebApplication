@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Paul Faye">
-    <meta http-equiv="refresh" content="30">
+    <!--<meta http-equiv="refresh" content="30"> -->
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="description" content="B_system  home page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,42 +12,40 @@
 </head>
 <body>
  <div id="fex-container">
-     <div class="header">
-     <img src="images/02.%20Logo_white.png" alt="logo white">
-     </div>
+       <div class="header">
+            <img src="images/02.%20Logo_white.png" alt="logo white">
+       </div>
          <div class="nav">
              <ul>
-                <li ><a href="html/studio.html">Our studio</a></li>
+                <li  id ="studio"><a href="html/studio.html">Our studio</a></li>
                 <li ><a href="html/service.html">Services</a></li>
                 <li ><a href="html/DesignForHumans.html">Designing for humans</a></li>
                 <li id="contact1"><a href="html/contact.html">Contact</a></li>
-                <li id = "input"><input  type="search"  id="icon"><label for="icon">Iconship</label></li>
-                <li ><button id="button"><a href="html/your-era.html">Your area<label>User</label></a></button></li>
              </ul>
          </div>
+         <div id="droite">
+             <input  type="search"  id="icon"><label for="icon"><a><img  id="image1" src="images/glass.png" alt="icon"></a></label>
+            <button id="button"><a href="html/your-era.html">Your area<img src="images/avatar.png"  id="avatar" alt="icon"></a></button>
+         </div>
+    </div>
+ <div id="div-center">
      <div id="section">
-         <h1>We make <br>magic</h1>
-         <p>We are a freelance design studio passionate about<br>rethinking how things operate every day</p>
-         <p><button> <a href="html/meet_B_system.html"> Meet B_system </a> </button> </p>
+         <h1>We make <br>magic &#x21;</h1>
+         <p id="paragrah1">We are a freelance design studio passionate about<br>rethinking how things operate every day</p>
+         <p><button><a href="html/meet_B_system.html">Meet B_system </a></button> </p>
      </div>
      <div id="article">
         <img src="images/image2.png" alt="image de fond" id="image">
      </div>
-
  </div>
-
- <!-- div2 -->
- <div id="mydiv2">
-
+ <div id="div2-container">
          <h1>What do we do?</h1>
          <p>we design digital products,services, and systems with goal of
              enrichin and improving the way people <br>use things.We put people first to
              design, build, and launch experiences that redefine industries in our<br>
-             constantly evolving digital era</p>
-
+             constantly evolving digital era
+         </p>
  </div>
-
-
  <!-- div contenant des grilles -->
 <div class="grid-container">
     <div class="grid-item1">
@@ -57,7 +55,7 @@
             complex problems.No matter the size of the project, we<br>
             we use these principles to guide our way to create impact<br>
         </p>
-        <p><a href="/html/learn.html">Learn more-&gt;</a></p>
+        <p id="learn-more">Learn more</p>
     </div>
     <div class="grid-item2">
         <img src="images/image3.png"  id="imagefond" alt="image de fond">
@@ -66,18 +64,17 @@
         <img src="images/image1.png" alt="image de fond">
     </div>
     <div class="grid-item4">
-
         <ul>
             <li><h1>Our values</h1></li>
-            <li><a href="html/design.html">simple and intituive design</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<label>+</label></li>
+            <li><a href="html/design.html">simple and intituive design</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<label id="label1">+</label></li>
             <li><hr></li>
-             <li><p></p></li>      <!-- afficher en cas de click avec javascript -->
-            <li>Emotions and data in the same bag &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>+</label></li>
+             <li><p id="para1"></p></li>      <!-- afficher en cas de click avec javascript -->
+            <li><a href="html/Emotions.html">Emotions and data in the same bag</a>&nbsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label id="label2">+</label></li>
             <li><hr></li>
-            <li><p></p></li>    <!-- afficher en cas de click avec javascript -->
-            <li>Curiosity rules the study &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>+</label></li>
+            <li><p id="para2"></p></li>    <!-- afficher en cas de click avec javascript -->
+            <li><a href="html/Curiosity.html">Curiosity rules the study</a>&nbsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label id="label3">+</label></li>
             <li><hr></li>
-            <li><p></p></li>    <!-- afficher en cas de click avec javascript -->
+            <li><p id="para3"></p></li>    <!-- afficher en cas de click avec javascript -->
 
         </ul>
     </div>
@@ -86,40 +83,38 @@
 
      <!-- div contenant le formulaire -->
        <div id="formulaire">
+           <table>
+               <tr> <td><h1>Contact us!</h1></td></tr>
+               <tr><td><p>Please fill out this form to send your message:</p></td></tr>
+               <tr><td><input type="text" placeholder="Name" style="width: 560px; height: 50px; margin-bottom: 15px;"></td></tr>
+               <tr><td><input type="text" placeholder="Surnames" style="width: 560px; height: 50px; margin-bottom: 15px;"></td></tr>
+               <tr><td><input type="text" placeholder="Email" style="width: 560px; height: 50px; margin-bottom: 15px;"></td></tr>
+               <tr><td><input type="text" placeholder="Subject" style="width: 560px; height: 50px; margin-bottom: 15px;"></td></tr>
+               <tr><td><input  value="Message" style="width: 560px; height: 200px; margin-bottom: 15px;"></td></tr>
+               <tr><td><input type="checkbox" style="width: 30px;height: 30px;margin-bottom: 30px;"><sup>&nbsp;I authorize the treatment of my data</sup></td></tr>
+               <tr><td><input type="button" value="Send" style=" width:190px;height: 40px"></td></tr>
+           </table>
 
-                <table>
-                   <tr> <td><h1>Contact us!</h1></td></tr>
-                   <tr><td><p>Please fill out this form to send your message:</p></td></tr>
-                   <tr><td><input type="text" placeholder="Name" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
-                   <tr><td><input type="text" placeholder="Surnames" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
-                   <tr><td><input type="text" placeholder="Email" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
-                   <tr><td><input type="text" placeholder="Subject" style="width: 500px; height: 40px; margin-bottom: 15px;"></td></tr>
-                   <tr><td><input  value="Message" style="width: 500px; height: 200px; margin-bottom: 15px;"></td></tr>
-                   <tr><td><input type="checkbox" style="width: 30px;height: 30px;margin-bottom: 30px;"><sup>&nbsp;I authorize the treatment of my data</sup></td></tr>
-                   <tr><td><input type="button" value="Send" style=" width:190px;height: 40px"></td></tr>
-                </table>
        </div>
          <!-- div contenant les contacts -->
        <div id="contacts">
            <div id="urgent-query">
-
+               <img src="images/woman.png"  id="woman" alt="numero contacts">
+               <p>If you have an urgent query you can<br> call us:</p>
+               <p>T. (+34) 915 805 007</p>
+               <p>F. (+34) 915 806 082</p>
            </div>
            <div id="search-engine">
-
+               <img src="images/place-holder.png" alt="lien adresse">
+               <p>Find ours offices easily in our search<br>engine</p>
            </div>
-
        </div>
-
  </div>
-
-
-
 <div id="div-footer">
     <!-- premier sous div du footer -->
     <div id="div1-footer">
         <h3>Do you want to start with B-system today?</h3>
-        <p><button id="button-footer"><a href="html/start_B_system.html">Start with B_system</a></button></p>
-
+        <p><button id="button-footer">Start with B_system</button></p>
     </div>
     <!-- deuxieme sous div2 -->
     <div id="div2-footer">
@@ -128,19 +123,13 @@
         <object data="/images/pinterest.png"  style="width: 50px;height: 50px" type="image/svg+xml"></object>
         <object data="/images/twitter.png"  style="width: 50px;height: 50px" type="image/svg+xml"></object>
         <object data="/images/linkedin.png"  style="width: 50px;height: 50px" type="image/svg+xml"></object>
-
     </div>
     <!-- troisieme sous div3 -->
     <div id="div3-footer">
     <h2><img src="images/03.%20Logo_symbol.png" alt="logo symbole">&nbsp; <sup>B_system</sup></h2>
-
     </div>
-
 </div>
 <!-- inclusion du fichier javascript externe -->
-<script type="text/javascript" src="js/main.js">
-
-</script>
-
+<script  src="js/main.js"></script>
 </body>
 </html>
